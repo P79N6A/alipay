@@ -1,0 +1,34 @@
+{
+  "name": "payment-sdk/alipay",
+  "type": "library",
+  "description": "支付宝SDK",
+  "keywords": [
+    "alipay",
+    "gateway",
+    "merchant",
+    "omnipay",
+    "pay",
+    "payment",
+    "purchase"
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Omnipay\\Alipay\\": "src/",
+      "Omnipay\\Alipay\\Tests\\": "tests/"
+    },
+    "files": [
+      "src/Common/helpers.php"
+    ]
+  },
+  "require": {
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "omnipay/common": "^3.0",
+    "php-http/guzzle6-adapter": "^2.0"
+  },
+  "require-dev": {
+    "omnipay/tests": "^3.0",
+    "squizlabs/php_codesniffer": "^3.4"
+  }
+}
